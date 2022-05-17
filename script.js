@@ -4,35 +4,57 @@ let choicesArray = ['rock', 'paper', 'scissors']
 let computerSelection
 let playerSelection
 let playerInput
+let scorestring
+let computerScore
+let playerScore
+
+
 
 function computerPlay() {
     random_int = Math.floor(Math.random()*choicesArray.length) 
     return choicesArray[random_int]
 }
 
-function playerPlay() {
-    playerInput = window.prompt("Choose 1 - rock 2 - paper or 3 - scissors")
-    if(playerInput == 1){
-        return choicesArray[0]
-    }
-    else if(playerInput == 2){
-        return choicesArray[1]
-    }
-    else if(playerInput == 3){
-        return choicesArray[2]
-    }
-        
-    
+function displayScore(scorestring) {
 
+}
+
+function rockChoice() {
+    playerSelection = 'rock'
+    computerSelection = computerPlay()
+}
+
+function scissorsChoice() {
+    playerSelection = 'scissors'
+    computerSelection = computerPlay()
+}
+
+function paperChoice() {
+    playerSelection = 'paper'
+    computerSelection = computerPlay()
 }
 
 function playRound(playerSelection, computerSelection) {
 
-    playerSelection = playerPlay.toLowerCase()
-    computerSelection = computerPlay().toLowerCase()
-
-    if(playerSelection == computerPlay){
-        
+    if(playerSelection == computerSelection){
+        //tie
     }    
-
+    else if(playerSelection == 'rock' && computerSelection == 'paper'){
+        //computer wins
+    }
+    else if(playerSelection == 'rock' && computerSelection == 'scissors'){
+        //player wins
+    }
+    else if(playerSelection == 'paper' && computerSelection == 'rock'){
+        //player wins
+    }
+    else if(playerSelection == 'paper' && computerSelection == 'scissors'){
+        //computer wins
+    }
+    else if(playerSelection == 'scissors' && computerSelection == 'paper'){
+        //player wins
+    }
+    else if(playerSelection == 'scissors' && computerSelection == 'rock'){
+        //computer wins
+    }
 }
