@@ -11,19 +11,28 @@ function computerPlay() {
 }
 
 function playerPlay() {
-    playerInput = console.log("Choose 1 - rock 2 - paper or 3 - scissors")
-    switch(playerInput){
-        
+    playerInput = window.prompt("Choose 1 - rock 2 - paper or 3 - scissors")
+    if(playerInput == 1){
+        return choicesArray[0]
     }
+    else if(playerInput == 2){
+        return choicesArray[1]
+    }
+    else if(playerInput == 3){
+        return choicesArray[2]
+    }
+        
     
 
 }
 
 function playRound(playerSelection, computerSelection) {
 
-    playerSelection = 'rock'
+    playerSelection = playerPlay.toLowerCase()
     computerSelection = computerPlay().toLowerCase()
 
-    if()
+    if(playerSelection == computerPlay){
+        
+    }    
 
 }
