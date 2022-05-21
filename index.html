@@ -15,25 +15,39 @@
             <div class = "choice window">
                 <div class="choice icon 1">
                     <button class="choice button">
-                        <img class = "rock" src="rock.png" alt = "rock" onclick="rockChoice()"> 
+                        <div class = "rock" onclick="rockChoice()">✊</div>
                     </button>
                 </div>
                 <div class="choice icon 2">
                     <button class = "choice button">
-                        <img class = "paper" src = "paper.png" alt = "paper" onclick="paperChoice()">
+                        <div class = "paper" onclick="paperChoice()">✋</div>
                     </button class = "choice button">
                 </div>
                 <div class="choice icon 3">
                     <button class = "choice button">
-                        <img class = "scissors" src = "scissors.png" alt = "scissors" onclick="scissorsChoice()">
+                        <div class = "scissors" onclick="scissorsChoice()">✌</div>
                     </button>
                 </div>
+            </div>
+            <div class = "winner text">
+                 <p><span id = "roundwinner"></span></p>
+            </div>
+            <div class="chosen window">
+                <p1 class="player chosen" >Player chose: <span id = "plrchsn"> </span></p1>
+                <p2 class = "computer chosen">Computer chose: <span id ="compchsn"> </span></p2>
             </div>
             <div class="Scores">
                 <p1 class="computer score text">Computer score:  <span id ="compScore"></span></p1>
                 <p2 class="player score text">Player score: <span id="plrScore"></span></p2>
             </div>
-
+            <div class = "game winner text">
+                <span id="gamewinner"></span>
+            </div>
+            <div class="replay">
+                <button class = "replay button" id="replaybutton" onClick=window.location.reload()>
+                    <div class = "replay text" id="replaybutton">Replay?</div>
+                </button>
+            </div>
         </div>
         <script src="script.js"></script>
     </body>

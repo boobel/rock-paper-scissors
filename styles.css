@@ -14,7 +14,7 @@ body {
 }
 
 .title.text {
-    margin-top: 120px;
+    margin-top: 80px;
     display: flex;
     justify-content: center;
     align-self: center;
@@ -41,9 +41,70 @@ body {
 }
 
 .choice.button {
-
+    font-size: 80px;
     border-width: 5px;
     border-radius: 15px;
-    border-color: black;
+    border-color: rgb(36, 34, 34);
     padding: 5px;
+    background-color: rgb(75, 69, 69);
+}
+
+.chosen.window{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+    margin: 20px;
+}
+
+.chosen {
+    margin: 50px;
+}
+
+.winner.text {
+    display: flex;
+    justify-content: center;
+}
+
+.game.winner.text {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    margin-top: 15px;
+}
+
+.replay {
+    display: flex;
+    justify-content: center;
+}
+
+.replay.button {
+	box-shadow:inset 0px 1px 3px 0px #3b3d3d;
+	background:linear-gradient(to bottom, #525555 5%, #2f3131 100%);
+	background-color:#363a39;
+	border-radius:5px;
+	border:1px solid #1d201f;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:11px 23px;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #2b665e;
+    margin-top: 50px;
+}
+
+.replay.button :active {
+	position:relative;
+	top:3px;
+}
+
+#plrchsn {
+    font-size: 50px;
+}
+
+#compchsn {
+    font-size: 50px;
 }
